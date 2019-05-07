@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Process Form</title>
+</head>
+<body>
+<h1>Welcome To Spring World!!</h1>
+
+<p th:text="${'Fist Name :' + student.getFirstName() }">First Name</p>
+<p th:text="${'Last Name :' + student.getLastName() }">Last Name</p>
+<p th:text="${'Country :' + student.getCountry() }">First Name</p>
+<p th:text="${'Language :' + student.getFavoriteLanguage() }">First Name</p>
+<p th:text="${'Operating System : ' + student.getOperatingSystem()}"></p>
+<ul th:each="x : ${student.getOperatingSystem()}">
+    <li th:text="${x}"></li>
+</ul>
+<p th:text="${'Address : ' + student.getAddress()}"></p>
+<p th:text="${'Admission Date: ' + student.getAdmissionDate()}"></p>
+<p th:text="${'Dress Color: ' + student.getDressColor()}"></p>
+
+</body>
+</html>

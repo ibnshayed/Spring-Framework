@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Form</title>
+</head>
+<body>
+
+    <h1>Student Form: </h1>
+
+     <form action="#" th:action="@{/student/processform}" th:object="${student}" method="get">
+        <p>First Name : <input type="text" th:field="*{firstName}" /></p>
+        <p>Last Name : <input type="text" th:field="*{lastName}" /></p>
+<!--         <p>
+             Country : <select th:field="*{country}">
+             <option value="Brazil" label="Brazil"></option>
+             <option value="Bangladesh" label="BD"></option>
+             <option value="USA" label="USA"></option>
+             <option value="Pakistan" label="Pakistan"></option>
+
+         </select>
+         </p>-->
+
+         <p>Country :
+             <select th:field="*{country}">
+                 <option
+                         th:each="x : ${student.getCountryHashMap()}"
+                         th:value="${x.key}"
+                         th:text="${x.value}" ></option>
+             </select>
+         </p>
+
+         <p>Favorite Language:
+             <input type="radio" th:field="*{favoriteLanguage}" value="Java">Java
+             <input type="radio" th:field="*{favoriteLanguage}" value="C++">C++
+             <input type="radio" th:field="*{favoriteLanguage}" value="Python">Python
+         </p>
+
+         <p>Operating System:
+             <input type="checkbox" th:field="*{operatingSystem}" value="Windows 10">Windows 10
+             <input type="checkbox" th:field="*{operatingSystem}" value="Mac OS"> Mac OS
+             <input type="checkbox" th:field="*{operatingSystem}" value="Linux OS"> Linux OS
+
+         </p>
+         <p>Address:
+             <textarea name="" id="" cols="50" rows="4" th:field="*{address}"></textarea>
+         </p>
+
+        <p>Admission Date:
+            <input type="datetime-local" th:field="*{admissionDate}">
+        </p>
+
+         <p>Dress Color:
+             <input type="color" th:field="*{dressColor}">
+         </p>
+
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+
+</body>
+</html>
