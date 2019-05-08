@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .form-error-text{color: red}
+    </style>
+</head>
+<body>
+<h2>You must have to fill up the (*) marks fields</h2>
+<form action="" th:action="@{/processform}"  th:object="${customer}" method="post">
+    <p>First Name : <input type="text" th:field="*{firstName}"></p>
+    <p>Last Name(*): <input type="text" th:field="*{lastName}">
+      <!-- <error class="form-error-text" th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></error>-->
+       <error class="form-error-text" th:errors="*{lastName}"></error>
+    </p>
+
+    <p>Free Passes(*):
+        <input type="text" th:field="*{freePasses}">
+        <error class="form-error-text" th:errors="*{freePasses}"></error>
+    </p>
+
+    <p>Postal Code(*):
+        <input type="text" th:field="*{postalCode}">
+        <error class="form-error-text" th:errors="*{postalCode}"></error>
+    </p>
+
+    <p>Course Code(*):
+        <input type="text" th:field="*{courseCode}">
+        <error class="form-error-text" th:errors="*{courseCode}"></error>
+    </p>
+
+    <p><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>
+</form>
+
+</body>
+</html>

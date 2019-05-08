@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Customer Profile : </h1>
+<p th:text="${'First Name: ' + customer.getFirstName()}"></p>
+<p th:text="${'Last Name: ' + customer.getLastName()}"></p>
+<p th:text="${'Free Passes : ' + customer.getFreePasses()}"></p>
+<p th:text="${'Postal Code : ' + customer.getPostalCode()}"></p>
+<p th:text="${'Course Code : ' + customer.getCourseCode()}"></p>
+</body>
+</html>
