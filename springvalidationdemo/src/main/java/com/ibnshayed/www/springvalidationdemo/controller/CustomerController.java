@@ -14,7 +14,7 @@ import javax.validation.Valid;
 
 @Controller
 public class CustomerController {
-
+    //if field has only blank space it trim the spaces and say it is null
     @InitBinder
     public void initBinder(WebDataBinder webDataBinder){
         StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
