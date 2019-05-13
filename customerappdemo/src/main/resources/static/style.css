@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: greenyellow;
+    color: red;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    box-shadow: 4px 20px 20px 0px black;
+    background-color: white;
+}
+
+caption{
+    text-decoration: underline;
+    color: darkgoldenrod;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.addbutton{
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-left: 95px;
+    border-radius: 20px;
+    width: 200px;
+    font-size: 25px;
+    background-color: crimson;
+    color: white;
+}

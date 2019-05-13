@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/mvc
+            http://www.springframework.org/schema/mvc/spring-mvc.xsd
+            http://www.springframework.org/schema/util
+            http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- Add support for component scanning -->
+    <context:component-scan base-package="com.ibnshayed.www" />
+
+    <!-- Add support for conversion, formatting and validation support (@Valid, @RequestBody, @ResponseBody, @RequestMapping-->
+    <mvc:annotation-driven />
+
+    <!-- Define Spring MVC view resolver -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+    <!-- Add static view controllers -->
+    <mvc:view-controller path="../resources/templates" view-name="customer-form" />
+
+    <!-- Define resource path -->
+    <mvc:resources mapping="/resources/**" location="../WEB-INF"/>
+
+    <!-- Use specific property file from classpath -->
+    <util:properties id="freePasses" location="classpath:../resources/messages.properties" />
+
+    <!-- Load custom message resources -->
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basenames" value="messages" />
+    </bean>
+
+</beans>
