@@ -9,11 +9,42 @@
     <div class="header">
         <h1>Customer Profile</h1>
     </div>
+
     <div>
-        <p th:text="${'Customer Id : ' + customer.getId()}"></p> <br><br>
-        <p th:text="${'First Name : ' + customer.getFirstName()}"></p> <br><br>
-        <p th:text="${'Last Name : ' + customer.getLastName()}"></p> <br><br>
-        <p th:text="${'Customer Email : ' + customer.getEmail()}"></p> <br><br>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Customer Id :</td>
+                    <td><p th:text="${ customer.getId()}"></p></td>
+                </tr>
+                <tr>
+                    <td>First Name :</td>
+                    <td><p th:text="${customer.getFirstName()}"></p></td>
+                </tr>
+                <tr>
+                    <td>Last Name :</td>
+                    <td><p th:text="${customer.getLastName()}"></p></td>
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><p th:text="${customer.getEmail()}"></p> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br><br><br>
+    <div>
+        <input type="button" value="Back"
+               onclick="window.location.href='../customers'; return false;"
+               class="addbutton">
     </div>
 
 </body>

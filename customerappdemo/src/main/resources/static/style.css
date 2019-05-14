@@ -50,3 +50,36 @@ a:link{
     background-color: crimson;
     color: white;
 }
+
+input[type=button], input[type=submit], input[type=reset] {
+
+    background: #B9DFFF;
+
+    color: #fff;
+
+    border: 1px solid #eee;
+
+    border-radius: 20px;
+
+    box-shadow: 5px 5px 5px #eee;
+
+    text-shadow:none;
+
+}
+
+input[type=button], input[type=submit], input[type=reset]:hover {
+
+    background: #016ABC;
+
+    color: #fff;
+
+    border: 1px solid #eee;
+
+    border-radius: 20px;
+
+    box-shadow: 5px 5px 5px #eee;
+
+    text-shadow:none;
+
+}
+input[type=button], input[type=submit], input[type=reset]

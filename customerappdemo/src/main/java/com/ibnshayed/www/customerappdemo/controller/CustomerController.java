@@ -21,7 +21,7 @@ public class CustomerController {
 
     @GetMapping(value = "/customer/{id}")
     public String getACustomer(@PathVariable int id, Model model){
-        model.addAttribute("customer",customerRepository.findById(id).orElse(null));
+        model.addAttribute("customer",customerRepository.getOne(id));
         return "customer-profile";
     }
 
@@ -33,12 +33,14 @@ public class CustomerController {
     }
     @PostMapping(value = "/savecustomer")
     public String saveCustomer(@ModelAttribute("customer") Customer theCustomer ){
-        customerRepository.save(theCustomer);
-        return "redirect:/v1/customers";
+            customerRepository.save(theCustomer);
+            return "redirect:/v1/customers";
     }
+
     @GetMapping(value = "/showformforupdate")
     public String getUpdateACustomer(@RequestParam("customerId") int id,Model model){
-        model.addAttribute("customer",customerRepository.findById(id).orElse(null));
+        Customer theCustomer = customerRepository.getOne(id);
+        model.addAttribute("customer",theCustomer);
         return "customer-form";
     }
 
