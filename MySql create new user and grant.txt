@@ -1,0 +1,3 @@
+create user 'username'@'%' identified by 'password';
+grant all on databaseName.* to 'username'@'%';
+flush privileges;
