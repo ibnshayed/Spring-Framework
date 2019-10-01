@@ -13,10 +13,13 @@ public class HomePageController {
         return "firstpage";
     }
 
-   @RequestMapping(value = "/home")
+/*   //When we write index.html ..
+     //tomcat server automatically shows it at localhost:(port) as default
+     // so we don't need to right like that
+    @RequestMapping(value = "/home")
     public String homePage(){
         return "index";
-    }
+    }*/
 
     @RequestMapping(value = "/test")
     public String demopage(){

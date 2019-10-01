@@ -4,12 +4,8 @@ import lombok.*;
 
 import javax.persistence.*;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Getter
-@Setter
-@ToString
+
+@Data // Using @Data lombok annotation we can access constructor , getter ,setter and toString method
 @Entity
 @Table(name = "student")
 public class Student {
