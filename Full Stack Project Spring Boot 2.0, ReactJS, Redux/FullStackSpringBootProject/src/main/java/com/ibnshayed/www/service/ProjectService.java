@@ -5,7 +5,6 @@ import com.ibnshayed.www.exceptions.ProjectIdException;
 import com.ibnshayed.www.repository.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import sun.plugin.perf.PluginRollup;
 
 @Service
 public class ProjectService {
