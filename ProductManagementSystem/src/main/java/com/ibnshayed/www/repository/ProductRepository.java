@@ -1,5 +1,6 @@
-package com.ibnshayed.www;
+package com.ibnshayed.www.repository;
 
+import com.ibnshayed.www.model.Product;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
 

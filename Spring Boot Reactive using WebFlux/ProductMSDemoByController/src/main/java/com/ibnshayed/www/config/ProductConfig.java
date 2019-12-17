@@ -1,5 +1,8 @@
-package com.ibnshayed.www;
+package com.ibnshayed.www.config;
 
+
+import com.ibnshayed.www.model.Product;
+import com.ibnshayed.www.repository.ProductRepository;
 import com.mongodb.reactivestreams.client.MongoClient;
 import com.mongodb.reactivestreams.client.MongoClients;
 import org.springframework.boot.CommandLineRunner;
@@ -23,7 +26,7 @@ public class ProductConfig extends AbstractReactiveMongoConfiguration {
 
     @Override
     protected String getDatabaseName() {
-        return "todos";
+        return "products";
     }
 
     @Override

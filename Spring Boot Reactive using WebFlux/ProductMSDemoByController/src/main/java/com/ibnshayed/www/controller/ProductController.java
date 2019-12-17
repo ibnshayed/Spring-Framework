@@ -1,5 +1,7 @@
-package com.ibnshayed.www;
+package com.ibnshayed.www.controller;
 
+import com.ibnshayed.www.model.Product;
+import com.ibnshayed.www.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;

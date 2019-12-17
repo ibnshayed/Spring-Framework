@@ -1,14 +1,13 @@
-package com.ibnshayed.www;
+package com.ibnshayed.www.service;
 
+import com.ibnshayed.www.model.Product;
+import com.ibnshayed.www.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Service
-@Transactional
 @RequiredArgsConstructor
 public class ProductService {
 
