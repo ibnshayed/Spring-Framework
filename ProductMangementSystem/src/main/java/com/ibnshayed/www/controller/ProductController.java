@@ -9,7 +9,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@RequestMapping("/product/v1")
+@RequestMapping("/v1")
 @RequiredArgsConstructor
 public class ProductController {
 
@@ -34,7 +34,7 @@ public class ProductController {
     }
 
     @PutMapping("/product/{productId}")
-    public Mono<ResponseEntity<Product>> getUserById(@PathVariable String productId, @RequestBody Product product){
+    public Mono<ResponseEntity<Product>> UpdateProductById(@PathVariable String productId, @RequestBody Product product){
         return this.productRepository.findById(productId)
                 .flatMap(dbProduct -> {
                     dbProduct.setProductId(product.getProductId());
@@ -51,7 +51,7 @@ public class ProductController {
     public Mono<ResponseEntity<Void>> deleteProductById(@PathVariable String productId){
         return productRepository.findById(productId)
                 .flatMap(existingProduct ->
-                        productRepository.delete(existingProduct)
+                        this.productRepository.delete(existingProduct)
                                 .then(Mono.just(ResponseEntity.ok().<Void>build()))
                 )
                 .defaultIfEmpty(ResponseEntity.notFound().build());
