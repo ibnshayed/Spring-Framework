@@ -1,7 +1,9 @@
 package com.ibnshayed.www.controller;
+import com.ibnshayed.www.exception.ProductIdException;
 import com.ibnshayed.www.model.Product;
 import com.ibnshayed.www.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
@@ -47,13 +49,28 @@ public class ProductController {
 
 
     @DeleteMapping("/product/{productId}")
-    public Mono<ResponseEntity<Void>> deleteProductById(@PathVariable String productId) {
+    public Mono<ResponseEntity<String>> deleteProductById(@PathVariable String productId) {
         return productRepository.findById(productId)
                 .flatMap(existingProduct ->
                         this.productRepository.delete(existingProduct)
-                                .then(Mono.just(ResponseEntity.ok().<Void>build()))
+                                .then(Mono.just(ResponseEntity.ok().body("Product Id' "+productId+" is deleted.")))
                 )
-                .defaultIfEmpty(ResponseEntity.notFound().build());
+                .defaultIfEmpty(ResponseEntity.badRequest().body("Product Id' "+productId+" doesn't exist."));
+    }
+
+
+    @PutMapping("/sellproduct/{productId}")
+    public Mono<ResponseEntity<Product>> sellProductById(@PathVariable String productId) {
+        Product oldProduct = this.productRepository.findById(productId).block();
+        Product newProduct = this.productRepository.findById(productId)
+                .filter(oldpPoduct -> oldProduct.getProductQuantity() > 0)
+                .block();
+
+        if(newProduct != null){
+            newProduct.setProductQuantity(oldProduct.getProductQuantity() - 1);   
+        }
+
+
     }
 
 }
