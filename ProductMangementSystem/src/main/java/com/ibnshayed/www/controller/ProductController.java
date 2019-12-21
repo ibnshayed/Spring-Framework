@@ -1,4 +1,5 @@
 package com.ibnshayed.www.controller;
+
 import com.ibnshayed.www.exception.ProductIdException;
 import com.ibnshayed.www.model.Product;
 import com.ibnshayed.www.repository.ProductRepository;
@@ -17,9 +18,19 @@ public class ProductController {
     private final ProductRepository productRepository;
 
     @PostMapping("/product")
-    Mono<ResponseEntity<Product>> createProduct(@RequestBody Product product) {
-        return this.productRepository.save(product)
-                .map(saveProduct -> ResponseEntity.ok(saveProduct));
+    Mono<ResponseEntity<String>> createProduct(@RequestBody Product product) {
+        Mono<Boolean> monoPresent = productRepository.findById(product.getProductId()).hasElement();
+        return productRepository.findById(product.getProductId())
+                .flatMap(existingProduct ->
+                        Mono.error(
+                                new ProductIdException("User already exists with productId ["
+                                        + existingProduct.getProductId() + "]")))
+                .switchIfEmpty(Mono.defer(() -> this.productRepository.save(product)))
+                .map(saveProduct -> ResponseEntity.ok()
+                        .body("Product Id is successfully created."));
+/*        return this.productRepository.save(product)
+                .map(saveProduct -> ResponseEntity.ok()
+                        .body("Product Id' " + saveProduct.getProductId() + " is successfully created."));*/
     }
 
     @GetMapping("/products")
@@ -38,7 +49,6 @@ public class ProductController {
     public Mono<ResponseEntity<Product>> UpdateProductById(@PathVariable String productId, @RequestBody Product product) {
         return this.productRepository.findById(productId)
                 .flatMap(dbProduct -> {
-                    dbProduct.setProductId(product.getProductId());
                     dbProduct.setProductName(product.getProductName());
                     dbProduct.setProductQuantity(product.getProductQuantity());
                     return this.productRepository.save(dbProduct);
@@ -50,27 +60,26 @@ public class ProductController {
 
     @DeleteMapping("/product/{productId}")
     public Mono<ResponseEntity<String>> deleteProductById(@PathVariable String productId) {
-        return productRepository.findById(productId)
+        return this.productRepository.findById(productId)
                 .flatMap(existingProduct ->
                         this.productRepository.delete(existingProduct)
-                                .then(Mono.just(ResponseEntity.ok().body("Product Id' "+productId+" is deleted.")))
+                                .then(Mono.just(ResponseEntity.ok().body("Product Id' " + productId + " is deleted.")))
                 )
-                .defaultIfEmpty(ResponseEntity.badRequest().body("Product Id' "+productId+" doesn't exist."));
+                .defaultIfEmpty(ResponseEntity.badRequest().body("Product Id' " + productId + " doesn't exist."));
     }
-
 
     @PutMapping("/sellproduct/{productId}")
     public Mono<ResponseEntity<Product>> sellProductById(@PathVariable String productId) {
-        Product oldProduct = this.productRepository.findById(productId).block();
-        Product newProduct = this.productRepository.findById(productId)
-                .filter(oldpPoduct -> oldProduct.getProductQuantity() > 0)
-                .block();
-
-        if(newProduct != null){
-            newProduct.setProductQuantity(oldProduct.getProductQuantity() - 1);   
-        }
-
-
+        Product product = this.productRepository.findById(productId).block();
+        return this.productRepository.findById(productId)
+                .filter(dbproduct -> dbproduct.getProductQuantity() > 0)
+                .flatMap(dbProduct -> {
+                    dbProduct.setProductQuantity(product.getProductQuantity() - 1);
+                    return this.productRepository.save(dbProduct);
+                })
+                .map(updatedProduct -> ResponseEntity.ok(updatedProduct))
+                .defaultIfEmpty(ResponseEntity.badRequest().build());
     }
+
 
 }
