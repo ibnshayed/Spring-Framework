@@ -1,5 +1,4 @@
 package com.ibnshayed.www.controller;
-
 import com.ibnshayed.www.model.Product;
 import com.ibnshayed.www.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
@@ -34,7 +33,7 @@ public class ProductController {
     }
 
     @PutMapping("/product/{productId}")
-    public Mono<ResponseEntity<Product>> UpdateProductById(@PathVariable String productId, @RequestBody Product product){
+    public Mono<ResponseEntity<Product>> UpdateProductById(@PathVariable String productId, @RequestBody Product product) {
         return this.productRepository.findById(productId)
                 .flatMap(dbProduct -> {
                     dbProduct.setProductId(product.getProductId());
@@ -48,7 +47,7 @@ public class ProductController {
 
 
     @DeleteMapping("/product/{productId}")
-    public Mono<ResponseEntity<Void>> deleteProductById(@PathVariable String productId){
+    public Mono<ResponseEntity<Void>> deleteProductById(@PathVariable String productId) {
         return productRepository.findById(productId)
                 .flatMap(existingProduct ->
                         this.productRepository.delete(existingProduct)
