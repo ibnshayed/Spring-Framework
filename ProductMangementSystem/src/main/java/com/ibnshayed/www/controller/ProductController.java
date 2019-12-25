@@ -1,10 +1,9 @@
 package com.ibnshayed.www.controller;
 
-import com.ibnshayed.www.exception.ProductIdException;
 import com.ibnshayed.www.model.Product;
-import com.ibnshayed.www.repository.ProductRepository;
+import com.ibnshayed.www.service.ProductService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.MediaType;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
@@ -15,70 +14,38 @@ import reactor.core.publisher.Mono;
 @RequiredArgsConstructor
 public class ProductController {
 
-    private final ProductRepository productRepository;
+    private final ProductService productService;
 
     @PostMapping("/product")
-    Mono<ResponseEntity<String>> createProduct(@RequestBody Product product) {
-        Mono<Boolean> monoPresent = productRepository.findById(product.getProductId()).hasElement();
-        return productRepository.findById(product.getProductId())
-                .flatMap(existingProduct ->
-                        Mono.error(
-                                new ProductIdException("User already exists with productId ["
-                                        + existingProduct.getProductId() + "]")))
-                .switchIfEmpty(Mono.defer(() -> this.productRepository.save(product)))
-                .map(saveProduct -> ResponseEntity.ok()
-                        .body("Product Id is successfully created."));
-/*        return this.productRepository.save(product)
-                .map(saveProduct -> ResponseEntity.ok()
-                        .body("Product Id' " + saveProduct.getProductId() + " is successfully created."));*/
+    Mono<Product> createProduct(@RequestBody Product product) {
+            return this.productService.save(product);
     }
 
     @GetMapping("/products")
     Flux<Product> productList() {
-        return this.productRepository.findAll().switchIfEmpty(Flux.empty());
+        return this.productService.findAll();
     }
 
     @GetMapping("/product/{id}")
-    public Mono<ResponseEntity<Product>> getProductById(@PathVariable(value = "id") String productId) {
-        return this.productRepository.findById(productId)
-                .map(savedProduct -> ResponseEntity.ok(savedProduct))
-                .defaultIfEmpty(ResponseEntity.notFound().build());
+    public Mono<Product> getProductById(@PathVariable(value = "id") String productId) {
+            return this.productService.findById(productId);
     }
 
     @PutMapping("/product/{productId}")
     public Mono<ResponseEntity<Product>> UpdateProductById(@PathVariable String productId, @RequestBody Product product) {
-        return this.productRepository.findById(productId)
-                .flatMap(dbProduct -> {
-                    dbProduct.setProductName(product.getProductName());
-                    dbProduct.setProductQuantity(product.getProductQuantity());
-                    return this.productRepository.save(dbProduct);
-                })
-                .map(updatedProduct -> ResponseEntity.ok(updatedProduct))
-                .defaultIfEmpty(ResponseEntity.badRequest().build());
+
+            return null;
     }
 
 
     @DeleteMapping("/product/{productId}")
-    public Mono<ResponseEntity<String>> deleteProductById(@PathVariable String productId) {
-        return this.productRepository.findById(productId)
-                .flatMap(existingProduct ->
-                        this.productRepository.delete(existingProduct)
-                                .then(Mono.just(ResponseEntity.ok().body("Product Id' " + productId + " is deleted.")))
-                )
-                .defaultIfEmpty(ResponseEntity.badRequest().body("Product Id' " + productId + " doesn't exist."));
+    public Mono<Void> deleteProductById(@PathVariable String productId) {
+        return this.productService.delete(productId);
     }
 
     @PutMapping("/sellproduct/{productId}")
     public Mono<ResponseEntity<Product>> sellProductById(@PathVariable String productId) {
-        Product product = this.productRepository.findById(productId).block();
-        return this.productRepository.findById(productId)
-                .filter(dbproduct -> dbproduct.getProductQuantity() > 0)
-                .flatMap(dbProduct -> {
-                    dbProduct.setProductQuantity(product.getProductQuantity() - 1);
-                    return this.productRepository.save(dbProduct);
-                })
-                .map(updatedProduct -> ResponseEntity.ok(updatedProduct))
-                .defaultIfEmpty(ResponseEntity.badRequest().build());
+        return null;
     }
 
 
