@@ -26,7 +26,8 @@ public class ProductService {
 
     // Find Product By ProductId
     public Mono<Product> findById(String productId){
-        return this.productRepository.findById(productId);
+        Mono<Product> productMono = this.productRepository.findById(productId);
+          return productMono;
 
     }
 
@@ -36,7 +37,7 @@ public class ProductService {
     }
 
     // Update a Product
-    public  Mono<Product> update(){
+    public  Mono<Product> update(Product product){
         return null;
     }
 
@@ -44,6 +45,9 @@ public class ProductService {
     public Mono<Void> delete(String productId) {
         return this.productRepository.deleteById(productId);
 
+    }
+
+    public void sellProduct(String productId){
     }
 
 
