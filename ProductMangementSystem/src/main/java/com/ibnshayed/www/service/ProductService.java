@@ -26,28 +26,40 @@ public class ProductService {
 
     // Find Product By ProductId
     public Mono<Product> findById(String productId){
-        Mono<Product> productMono = this.productRepository.findById(productId);
-          return productMono;
+        return this.productRepository.findById(productId);
 
     }
 
     //Find All Product
     public Flux<Product> findAll(){
-        return this.productRepository.findAll();
+        return this.productRepository.findAll()
+                .switchIfEmpty(Flux.just());
     }
 
     // Update a Product
     public  Mono<Product> update(Product product){
-        return null;
+        return this.productRepository.findById(product.getProductId())
+                .flatMap(foundProduct -> {
+                        foundProduct.setProductName(product.getProductName());
+                        foundProduct.setProductQuantity(product.getProductQuantity());
+                    return this.productRepository.save(foundProduct);
+                });
     }
 
     // Delete a Product
-    public Mono<Void> delete(String productId) {
-        return this.productRepository.deleteById(productId);
+    public Mono<Product> delete(String productId) {
+        return this.productRepository.findById(productId)
+                .flatMap(product -> this.productRepository.delete(product).thenReturn(product));
 
     }
 
-    public void sellProduct(String productId){
+    public Mono<Product> sellProduct(String productId){
+        return this.productRepository.findById(productId)
+                .flatMap(foundProduct -> {
+                    if(foundProduct.getProductQuantity() > 0)
+                        foundProduct.setProductQuantity(foundProduct.getProductQuantity() - 1);
+                    return this.productRepository.save(foundProduct);
+                });
     }
 
 

@@ -3,7 +3,6 @@ import com.ibnshayed.www.exception.ResourceAlreadyExistsException;
 import com.ibnshayed.www.model.Product;
 import com.ibnshayed.www.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;

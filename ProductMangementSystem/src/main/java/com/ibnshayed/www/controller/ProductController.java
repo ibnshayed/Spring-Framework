@@ -16,7 +16,7 @@ public class ProductController {
 
     private final ProductService productService;
 
-    @PostMapping("/product")
+    @PostMapping("/")
     Mono<Product> createProduct(@RequestBody Product product) {
             return this.productService.save(product);
     }
@@ -32,20 +32,20 @@ public class ProductController {
     }
 
     @PutMapping("/product/{productId}")
-    public Mono<ResponseEntity<Product>> UpdateProductById(@PathVariable String productId, @RequestBody Product product) {
+    public Mono<Product> UpdateProductById(@PathVariable String productId, @RequestBody Product product) {
 
-            return null;
+            return this.productService.update(product);
     }
 
 
     @DeleteMapping("/product/{productId}")
-    public Mono<Void> deleteProductById(@PathVariable String productId) {
+    public Mono<Product> deleteProductById(@PathVariable String productId) {
         return this.productService.delete(productId);
     }
 
     @PutMapping("/sellproduct/{productId}")
-    public Mono<ResponseEntity<Product>> sellProductById(@PathVariable String productId) {
-        return null;
+    public Mono<Product> sellProductById(@PathVariable String productId) {
+        return this.productService.sellProduct(productId);
     }
 
 
