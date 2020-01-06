@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7c5ca2a1-0c76-4b6f-b1eb-6a93893c6686" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_webflux_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_3_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibnshayed/www/ProductManagementSystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ibnshayed/www/ProductManagementSystemApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibnshayed/www/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ibnshayed/www/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibnshayed/www/controller/ProductControllerZeroVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ibnshayed/www/controller/ProductControllerZeroVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ibnshayed/www/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ibnshayed/www/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/ProductManagementSystemApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/ProductManagementSystemApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/config/EmbeddedMongoDBConfigForProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/config/EmbeddedMongoDBConfigForProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/controller/ProductControllerZeroVersion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/controller/ProductControllerZeroVersion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/controller/ProductHomePageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/controller/ProductHomePageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/exception/ResourceAlreadyExistsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/exception/ResourceAlreadyExistsException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/exception/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/exception/ResourceNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/model/Product$ProductBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/model/Product$ProductBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ibnshayed/www/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ibnshayed/www/ProductManagementSystemApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ibnshayed/www/ProductManagementSystemApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www.iml" beforeDir="false" afterPath="$PROJECT_DIR$/www.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1VKFnW3XxEMm4cZQ6qE9XYqxErE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Full Stack Project Spring Boot 2.0, ReactJS, Redux/FullStackSpringBootProject" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="instant.run" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ibnshayed.www.exception" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ProductManagementSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="www" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ibnshayed.www.ProductManagementSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7c5ca2a1-0c76-4b6f-b1eb-6a93893c6686" name="Default Changelist" comment="" />
+      <created>1576994046265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576994046265</updated>
+      <workItem from="1576994048394" duration="2054000" />
+      <workItem from="1577115698100" duration="10865000" />
+      <workItem from="1577251734300" duration="4810000" />
+      <workItem from="1577278109130" duration="6169000" />
+      <workItem from="1577370585556" duration="2269000" />
+      <workItem from="1577458449297" duration="273000" />
+      <workItem from="1577458769524" duration="2006000" />
+      <workItem from="1577534113128" duration="5850000" />
+      <workItem from="1578162000940" duration="662000" />
+      <workItem from="1578162703614" duration="495000" />
+      <workItem from="1578237945204" duration="1577000" />
+      <workItem from="1578306686467" duration="3918000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="642" y="380" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1578162674196">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="642" y="380" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578162674196" />
+    <state x="768" y="246" width="396" height="596" key="#com.intellij.ide.util.MemberChooser" timestamp="1577118033184">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="768" y="235" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1576994905280" />
+    <state x="768" y="246" width="396" height="596" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1577118033184" />
+    <state x="690" y="237" key="FileChooserDialogImpl" timestamp="1578162574144">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="690" y="237" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1578162574144" />
+    <state width="1865" height="642" key="GridCell.Tab.0.bottom" timestamp="1578310617317">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="642" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578310617317" />
+    <state width="1865" height="642" key="GridCell.Tab.0.center" timestamp="1578310617317">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="642" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578310617317" />
+    <state width="1865" height="642" key="GridCell.Tab.0.left" timestamp="1578310617317">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="642" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578310617317" />
+    <state width="1865" height="642" key="GridCell.Tab.0.right" timestamp="1578310617317">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="642" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578310617317" />
+    <state width="1865" height="642" key="GridCell.Tab.1.bottom" timestamp="1578310617317">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="642" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578310617317" />
+    <state width="1865" height="642" key="GridCell.Tab.1.center" timestamp="1578310617317">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="642" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578310617317" />
+    <state width="1865" height="642" key="GridCell.Tab.1.left" timestamp="1578310617317">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="642" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578310617317" />
+    <state width="1865" height="642" key="GridCell.Tab.1.right" timestamp="1578310617317">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1865" height="642" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578310617317" />
+    <state x="312" y="10" key="SettingsEditor" timestamp="1578308084901">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="312" y="10" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1578308084901" />
+    <state x="230" y="210" width="1459" height="704" key="new project wizard" timestamp="1577374038446">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="230" y="210" width="1459" height="704" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1577374038446" />
+  </component>
+</project>
