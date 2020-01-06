@@ -17,8 +17,8 @@ public class SwaggerConfig {
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(new ApiInfoBuilder()
-                        .description("example api")
-                        .title("example api")
+                        .description("Developed By - Emran Ibn Shayed")
+                        .title("EIS - Proudct Management System")
                         .version("1.0.0")
                         .build())
                 .select()
