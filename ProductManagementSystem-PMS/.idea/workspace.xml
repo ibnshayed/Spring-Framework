@@ -59,14 +59,30 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="instant.run" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.ibnshayed.www.exception" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestProductController.testGetEmployeeById">
+    <configuration name="TestProductController.testGetEmployeeById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="www" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ibnshayed.www.testController.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ibnshayed.www.testController" />
+      <option name="MAIN_CLASS_NAME" value="com.ibnshayed.www.testController.TestProductController" />
+      <option name="METHOD_NAME" value="testGetEmployeeById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductManagementSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="www" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ibnshayed.www.ProductManagementSystemApplication" />
@@ -74,6 +90,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestProductController.testGetEmployeeById" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -110,6 +131,7 @@
       <workItem from="1578237945204" duration="1577000" />
       <workItem from="1578306686467" duration="3918000" />
       <workItem from="1578314196238" duration="929000" />
+      <workItem from="1578495450956" duration="2264000" />
     </task>
     <servers />
   </component>
@@ -126,25 +148,33 @@
     </state>
     <state x="768" y="235" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1576994905280" />
     <state x="768" y="246" width="396" height="596" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1577118033184" />
+    <state x="618" y="322" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578495643691">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="618" y="322" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.864@0.0.1536.864" timestamp="1578495643691" />
     <state x="690" y="237" key="FileChooserDialogImpl" timestamp="1578162574144">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="237" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1578162574144" />
-    <state width="1865" height="139" key="GridCell.Tab.0.bottom" timestamp="1578315130266">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1493" height="238" key="GridCell.Tab.0.bottom" timestamp="1578497874348">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state width="1493" height="238" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1578497874348" />
     <state width="1865" height="139" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578315130266" />
-    <state width="1865" height="139" key="GridCell.Tab.0.center" timestamp="1578315130265">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1493" height="238" key="GridCell.Tab.0.center" timestamp="1578497874348">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state width="1493" height="238" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1578497874348" />
     <state width="1865" height="139" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578315130265" />
-    <state width="1865" height="139" key="GridCell.Tab.0.left" timestamp="1578315130265">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1493" height="238" key="GridCell.Tab.0.left" timestamp="1578497874348">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state width="1493" height="238" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1578497874348" />
     <state width="1865" height="139" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578315130265" />
-    <state width="1865" height="139" key="GridCell.Tab.0.right" timestamp="1578315130265">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1493" height="238" key="GridCell.Tab.0.right" timestamp="1578497874348">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state width="1493" height="238" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1578497874348" />
     <state width="1865" height="139" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578315130265" />
     <state width="1865" height="139" key="GridCell.Tab.1.bottom" timestamp="1578315130266">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -162,9 +192,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1865" height="139" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578315130266" />
-    <state x="312" y="10" key="SettingsEditor" timestamp="1578308084901">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="250" y="8" key="SettingsEditor" timestamp="1578495472498">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state x="250" y="8" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1578495472498" />
     <state x="312" y="10" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1578308084901" />
     <state x="230" y="210" width="1459" height="704" key="new project wizard" timestamp="1577374038446">
       <screen x="0" y="0" width="1920" height="1080" />
