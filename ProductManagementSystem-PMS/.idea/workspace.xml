@@ -14,8 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,33 +75,65 @@
       <recent name="com.ibnshayed.www.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductManagementSystemApplication">
-    <configuration name="TestProductController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ProductServiceTest.testAProduct">
+    <configuration name="ProductControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="www" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ibnshayed.www.testController.*" />
+          <option name="PATTERN" value="com.ibnshayed.www.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ibnshayed.www.testController" />
-      <option name="MAIN_CLASS_NAME" value="com.ibnshayed.www.testController.TestProductController" />
+      <option name="PACKAGE_NAME" value="com.ibnshayed.www.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.ibnshayed.www.controller.ProductControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestProductController.testGetEmployeeById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductControllerTest.testDeleteTweet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="www" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ibnshayed.www.testController.*" />
+          <option name="PATTERN" value="com.ibnshayed.www.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ibnshayed.www.testController" />
-      <option name="MAIN_CLASS_NAME" value="com.ibnshayed.www.testController.TestProductController" />
-      <option name="METHOD_NAME" value="testGetEmployeeById" />
+      <option name="PACKAGE_NAME" value="com.ibnshayed.www.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.ibnshayed.www.controller.ProductControllerTest" />
+      <option name="METHOD_NAME" value="testDeleteTweet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest.testAProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="www" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ibnshayed.www.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ibnshayed.www.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.ibnshayed.www.controller.ProductServiceTest" />
+      <option name="METHOD_NAME" value="testAProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest.testAllProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="www" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ibnshayed.www.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ibnshayed.www.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.ibnshayed.www.controller.ProductServiceTest" />
+      <option name="METHOD_NAME" value="testAllProducts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,9 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductServiceTest.testAProduct" />
+        <item itemvalue="JUnit.ProductServiceTest.testAllProducts" />
+        <item itemvalue="JUnit.ProductControllerTest.testDeleteTweet" />
+        <item itemvalue="JUnit.ProductControllerTest" />
         <item itemvalue="JUnit.TestProductController.testGetProductById" />
-        <item itemvalue="JUnit.TestProductController.testGetEmployeeById" />
-        <item itemvalue="JUnit.TestProductController" />
       </list>
     </recent_temporary>
   </component>
@@ -178,6 +212,10 @@
       <workItem from="1578501266758" duration="83000" />
       <workItem from="1578501388316" duration="2472000" />
       <workItem from="1578574414651" duration="697000" />
+      <workItem from="1579238133870" duration="625000" />
+      <workItem from="1579239524160" duration="678000" />
+      <workItem from="1579323788648" duration="1193000" />
+      <workItem from="1579366835022" duration="1204000" />
     </task>
     <servers />
   </component>
@@ -199,30 +237,34 @@
     </state>
     <state x="618" y="322" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.864@0.0.1536.864" timestamp="1578495643691" />
     <state x="773" y="403" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578500917255" />
+    <state x="640" y="253" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579325062015">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="640" y="253" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1579325062015" />
     <state x="690" y="237" key="FileChooserDialogImpl" timestamp="1578162574144">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="237" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1578162574144" />
-    <state width="1865" height="125" key="GridCell.Tab.0.bottom" timestamp="1578575116798">
+    <state width="1865" height="381" key="GridCell.Tab.0.bottom" timestamp="1579368049077">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="238" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1578497874348" />
-    <state width="1865" height="125" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578575116798" />
-    <state width="1865" height="125" key="GridCell.Tab.0.center" timestamp="1578575116798">
+    <state width="1865" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1579368049077" />
+    <state width="1865" height="381" key="GridCell.Tab.0.center" timestamp="1579368049077">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="238" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1578497874348" />
-    <state width="1865" height="125" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578575116798" />
-    <state width="1865" height="125" key="GridCell.Tab.0.left" timestamp="1578575116798">
+    <state width="1865" height="381" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1579368049077" />
+    <state width="1865" height="381" key="GridCell.Tab.0.left" timestamp="1579368049077">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="238" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1578497874348" />
-    <state width="1865" height="125" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578575116798" />
-    <state width="1865" height="125" key="GridCell.Tab.0.right" timestamp="1578575116798">
+    <state width="1865" height="381" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1579368049077" />
+    <state width="1865" height="381" key="GridCell.Tab.0.right" timestamp="1579368049077">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="238" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1578497874348" />
-    <state width="1865" height="125" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578575116798" />
+    <state width="1865" height="381" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1579368049077" />
     <state width="1865" height="125" key="GridCell.Tab.1.bottom" timestamp="1578575116798">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
