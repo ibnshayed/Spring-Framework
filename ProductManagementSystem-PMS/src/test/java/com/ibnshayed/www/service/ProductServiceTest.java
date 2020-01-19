@@ -1,4 +1,4 @@
-package com.ibnshayed.www.controller;
+package com.ibnshayed.www.service;
 
 import com.ibnshayed.www.model.Product;
 import com.ibnshayed.www.service.ProductService;
@@ -36,8 +36,9 @@ public class ProductServiceTest {
         Mono<Product> productMono = service.findById("1");
 
         StepVerifier.create(productMono)
-                .thenAwait(Duration.ofHours(10))
-                .expectNextCount(1)
+                //.thenAwait(Duration.ofHours(10))
+                .expectNext(new Product("1","name1",12))
+                //.expectNextCount(1)
                 .verifyComplete();
     }
 }

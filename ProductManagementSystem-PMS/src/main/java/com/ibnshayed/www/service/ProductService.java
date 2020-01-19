@@ -62,5 +62,14 @@ public class ProductService {
                 });
     }
 
+    public Mono<Product> addProductQuantity(String productId,int quantity){
+        return this.productRepository.findById(productId)
+                .flatMap(foundProduct -> {
+                    if(foundProduct.getProductQuantity() > 0)
+                        foundProduct.setProductQuantity(foundProduct.getProductQuantity() + quantity);
+                    return this.productRepository.save(foundProduct);
+                });
+    }
+
 
 }

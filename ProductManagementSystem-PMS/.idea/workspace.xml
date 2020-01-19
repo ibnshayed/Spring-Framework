@@ -68,6 +68,9 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.ibnshayed.www.controller" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ibnshayed.www.service" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -80,7 +83,7 @@
       <module name="www" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ibnshayed.www.controller.*" />
+          <option name="PATTERN" value="com.ibnshayed.www.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,7 +98,7 @@
       <module name="www" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ibnshayed.www.controller.*" />
+          <option name="PATTERN" value="com.ibnshayed.www.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +114,12 @@
       <module name="www" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ibnshayed.www.controller.*" />
+          <option name="PATTERN" value="com.ibnshayed.www.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ibnshayed.www.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.ibnshayed.www.controller.ProductServiceTest" />
+      <option name="PACKAGE_NAME" value="com.ibnshayed.www.service" />
+      <option name="MAIN_CLASS_NAME" value="com.ibnshayed.www.service.ProductServiceTest" />
       <option name="METHOD_NAME" value="testAProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -127,12 +130,12 @@
       <module name="www" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ibnshayed.www.controller.*" />
+          <option name="PATTERN" value="com.ibnshayed.www.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ibnshayed.www.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.ibnshayed.www.controller.ProductServiceTest" />
+      <option name="PACKAGE_NAME" value="com.ibnshayed.www.service" />
+      <option name="MAIN_CLASS_NAME" value="com.ibnshayed.www.service.ProductServiceTest" />
       <option name="METHOD_NAME" value="testAllProducts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -216,6 +219,7 @@
       <workItem from="1579239524160" duration="678000" />
       <workItem from="1579323788648" duration="1193000" />
       <workItem from="1579366835022" duration="1204000" />
+      <workItem from="1579427928785" duration="757000" />
     </task>
     <servers />
   </component>
@@ -241,30 +245,34 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="640" y="253" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1579325062015" />
+    <state x="710" y="354" width="499" height="378" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579427963940">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="710" y="354" width="499" height="378" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080@0.0.1920.1080" timestamp="1579427963940" />
     <state x="690" y="237" key="FileChooserDialogImpl" timestamp="1578162574144">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="237" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1578162574144" />
-    <state width="1865" height="381" key="GridCell.Tab.0.bottom" timestamp="1579368049077">
+    <state width="1865" height="109" key="GridCell.Tab.0.bottom" timestamp="1579428698244">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="238" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1578497874348" />
-    <state width="1865" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1579368049077" />
-    <state width="1865" height="381" key="GridCell.Tab.0.center" timestamp="1579368049077">
+    <state width="1865" height="109" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1579428698244" />
+    <state width="1865" height="109" key="GridCell.Tab.0.center" timestamp="1579428698244">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="238" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1578497874348" />
-    <state width="1865" height="381" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1579368049077" />
-    <state width="1865" height="381" key="GridCell.Tab.0.left" timestamp="1579368049077">
+    <state width="1865" height="109" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1579428698244" />
+    <state width="1865" height="109" key="GridCell.Tab.0.left" timestamp="1579428698243">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="238" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1578497874348" />
-    <state width="1865" height="381" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1579368049077" />
-    <state width="1865" height="381" key="GridCell.Tab.0.right" timestamp="1579368049077">
+    <state width="1865" height="109" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1579428698243" />
+    <state width="1865" height="109" key="GridCell.Tab.0.right" timestamp="1579428698244">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="238" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1578497874348" />
-    <state width="1865" height="381" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1579368049077" />
+    <state width="1865" height="109" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1579428698244" />
     <state width="1865" height="125" key="GridCell.Tab.1.bottom" timestamp="1578575116798">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
