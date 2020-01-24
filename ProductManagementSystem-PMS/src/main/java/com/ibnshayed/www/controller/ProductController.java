@@ -48,8 +48,8 @@ public class ProductController {
         return this.productService.sellProduct(productId);
     }
 
-    @PutMapping("/sellproduct/{productId}/{quantity}")
-    public Mono<Product> sellProductById(@PathVariable String productId,@PathVariable int quantity) {
+    @PutMapping("/addproduct/{productId}/{quantity}")
+    public Mono<Product> addProductById(@PathVariable String productId,@PathVariable int quantity) {
         return this.productService.addProductQuantity(productId, quantity);
 
     }
