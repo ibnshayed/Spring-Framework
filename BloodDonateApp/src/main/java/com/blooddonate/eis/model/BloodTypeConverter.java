@@ -8,8 +8,8 @@ public class BloodTypeConverter implements AttributeConverter<BloodType, String>
         return attribute.toString();
     }
     @Override
-    public BloodType convertToEntityAttribute(String bloodtype) {
-        return BloodType.of(bloodtype).orElse(null);
+    public BloodType convertToEntityAttribute(String bloodType) {
+        return BloodType.of(bloodType).orElse(null);
     }
 
 }

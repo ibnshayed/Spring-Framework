@@ -32,7 +32,6 @@ public class BloodDonateApplication {
             ));
 
             repository.findAll().forEach(System.out::println);
-            System.out.println("A_POSITIVE : " + BloodType.A_NEGETIVE);
         };
     }
 

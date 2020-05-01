@@ -18,6 +18,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/donor")
 @RequiredArgsConstructor
+@CrossOrigin
 public class DonorController {
     private final DonorService donorService;
     private final MapValidationErrorService mapValidationErrorService;
@@ -35,5 +36,16 @@ public class DonorController {
     public ResponseEntity<?> getDonorById(@PathVariable long id){
         Donor donor = donorService.donorFindById(id);
         return new ResponseEntity<Donor>(donor, HttpStatus.OK);
+    }
+
+    @GetMapping("/all")
+    public Iterable<Donor> getAllDonors(){
+        return donorService.findAllDonors();
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteDonorById(@PathVariable long id){
+        donorService.deleteDonorById(id);
+        return new ResponseEntity<String>("Donor With ID '" + id + "' is deleted successfully",HttpStatus.OK);
     }
 }

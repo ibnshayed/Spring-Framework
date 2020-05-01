@@ -20,10 +20,26 @@ public class DonorService {
     public Donor donorFindById(long id){
         Donor donor = donorRepo.findById(id).orElse(null);
         if (donor == null){
-            throw new DonorIdException("Donor Id " + id + " does not exist.");
+            throw new DonorIdException("Donor Id '" + id + "' does not exist.");
         }
         return donor;
     }
+
+    // FIND ALL
+    public Iterable<Donor> findAllDonors(){
+        return donorRepo.findAll();
+    }
+
+    //DELTE
+    public void deleteDonorById(long id){
+        Donor donor = donorRepo.findById(id).orElse(null);
+        if(donor == null){
+            throw new DonorIdException("The Donor With ID '"+id+"' is not exist.");
+        }
+
+        donorRepo.delete(donor);
+    }
+
 
 
 

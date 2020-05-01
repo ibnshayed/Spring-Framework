@@ -6,6 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface DonorRepository extends CrudRepository<Donor,Long> {
-    @Override
-    Iterable<Donor> findAllById(Iterable<Long> iterable);
 }
