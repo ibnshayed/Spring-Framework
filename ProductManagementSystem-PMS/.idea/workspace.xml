@@ -225,6 +225,8 @@
       <workItem from="1579794874469" duration="192000" />
       <workItem from="1579795133196" duration="406000" />
       <workItem from="1579798059966" duration="1874000" />
+      <workItem from="1580134765580" duration="614000" />
+      <workItem from="1581590537966" duration="140000" />
     </task>
     <servers />
   </component>
@@ -246,9 +248,10 @@
     </state>
     <state x="618" y="322" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.864@0.0.1536.864" timestamp="1578495643691" />
     <state x="773" y="403" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578500917255" />
-    <state x="640" y="253" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579325062015">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="512" y="202" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581590573517">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state x="512" y="202" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864@0.0.1536.864" timestamp="1581590573517" />
     <state x="640" y="253" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1579325062015" />
     <state x="710" y="354" width="499" height="378" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579427963940">
       <screen x="0" y="0" width="1920" height="1080" />
